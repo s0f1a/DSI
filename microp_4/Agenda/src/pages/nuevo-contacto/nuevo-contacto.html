@@ -14,26 +14,29 @@
 </ion-header>
 
 <ion-content padding>
-<form>
-<ion-list>
-<ion-item>
-<ion-label> Nombre </ion-label>
-<ion-input type = "text" placeholder = "Texto" name = "nombre"></ion-input>
-</ion-item>
-<ion-item>
-<ion-label> Organización </ion-label>
-<ion-input type = "text" placeholder = "Texto" name = "organizacion"></ion-input>
-</ion-item>
-<ion-item>
-<ion-label> Numero </ion-label>
-<ion-input type = "text" placeholder = "666666666"
-name = "numero"></ion-input>
-</ion-item>
-<ion-item>
-<ion-label> Correo </ion-label>
-<ion-input type = "text" placeholder = "name@example.com" name = "correo"></ion-input>
-</ion-item>
-</ion-list>
-<button ion-button block type = "submit"> Aceptar </button>
+<form (ngSubmit)= "onAddContact(f.value)" #f= "ngForm">
+	<ion-list>
+		<ion-item>
+			<ion-label> Nombre </ion-label>
+			<ion-input type = "text" placeholder = "Texto" name = "nombre" ngModel required></ion-input>
+			</ion-item>
+			
+			<ion-item>
+				<ion-label> Organización </ion-label>
+				<ion-input type = "text" placeholder = "Texto" name = "organizacion" ngModel required></ion-input>
+			</ion-item>
+			
+			<ion-item>
+				<ion-label> Numero </ion-label>
+				<ion-input type = "text" placeholder = "666666666" name = "movil" ngModel></ion-input>
+			</ion-item>
+			
+			<ion-item>
+				<ion-label> Correo </ion-label>
+				<ion-input type = "text" placeholder = "name@example.com" name = "correo" ngModel></ion-input>
+			</ion-item>
+	</ion-list>
+		<button ion-button block type = "submit" 
+	[disabled] = "!f.valid" > Aceptar </button>
 </form>
 </ion-content>
