@@ -1,0 +1,53 @@
+<!--
+  Generated template for the MisTarjetasPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+  <button ion-button menuToggle>
+	<ion-icon name = "menu"></ion-icon >	
+	</button >
+    <ion-title>Mis tarjetas de embarque</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-content padding id="colorFondo">
+<div *ngFor="let item of global.VarTarjetas; let indice= index">
+	<div class="fondo">
+	<div class="embellecedor">
+		<h2><ion-icon name = "card" id="espacioIcono"></ion-icon>Tarjeta de Embarque</h2>
+		</div>
+	<div class="divCaja">
+		<label><ion-icon name = "person" class="iconoStyle"></ion-icon ></label>
+		<ion-input class="caja1" placeholder="Nombre" value={{item[0].nombre}} ></ion-input>
+		<ion-input placeholder="Apellidos" class="caja1" value={{item[0].apellidos}}></ion-input>
+	</div>
+	<div class="divCaja">
+		<label><ion-icon name = "plane" class="iconoStyle"></ion-icon ></label>
+		 <ion-input placeholder="Asiento asignado" class="caja1" value="Asiento: 26"></ion-input>
+		 <ion-input placeholder="Grupo de embarque" class="caja1" value="Grupo: 3"></ion-input>	  
+	</div>
+	<div class="divCaja">
+		<label><ion-icon name = "time" class="iconoStyle"></ion-icon ></label>
+		 <ion-input placeholder="Hora de embarque" class="caja1" value="9:00 AM"></ion-input>
+		 </div>
+		 <div class="divCaja">
+		 <label><ion-icon name = "calendar" class="iconoStyle"></ion-icon ></label>
+		 <ion-input placeholder="Fecha de embarque" class="caja1" value={{item[0].fecha}}></ion-input>
+		 <ion-input placeholder="Puerta de embarque" class="caja1" value="Puerta: 2"></ion-input>
+	</div>
+	<div id="centrar">
+		 <img src="/assets/imgs/qr_img.png" width="50%">
+	</div>
+	<div id="estiloInfo">
+	<h2>Operación realizada en la fecha:</h2>
+	<ion-datetime displayFormat="MMM DD, h:mm A" [(ngModel)]="myDate"></ion-datetime>
+	</div>
+	</div>
+</div>
+</ion-content>
+
+</ion-content>

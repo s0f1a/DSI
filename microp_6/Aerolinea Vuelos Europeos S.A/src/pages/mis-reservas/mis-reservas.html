@@ -1,0 +1,65 @@
+<!--
+  Generated template for the MisReservasPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+	<ion-icon name = "menu"></ion-icon >	
+	</button >
+    <ion-title>Mis reservas</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding id="colorFondo">
+	<div class="tituloIncidencias">
+	<h1><ion-icon name="key"></ion-icon>Lista de reservas</h1>
+	</div>
+	<div *ngFor="let item of global.myGlobalVar; let indice= index">
+		<div class="resultadoCaja">
+		<div class="titulo">
+		<img src={{item[0].img}} class="logoColocar">
+		<h2>{{item[0].compania}}</h2>
+		</div>
+		<div>
+			<div class="colocar1">
+			<p class="aerolineaTitulo">Origen: <p>{{item[0].origen}}</p>
+			<p class="aerolineaTitulo">Fecha Ida: <p>{{item[0].fechaIda}}</p>
+			</div>
+			<ion-icon name = "arrow-round-forward" class="flecha"></ion-icon>
+			<div class="colocar2">
+			<p class="aerolineaTitulo">Destino: <p>{{item[0].destino}}</p>
+			<p class="aerolineaTitulo">Fecha Vuelta: <p>{{item[0].fechaVuelta}}</p>
+			</div>
+		</div>
+		<button ion-button round outline color="dark" icon-start id="boton2" (click)="irALegalidad()">
+				<ion-icon name="briefcase"></ion-icon>Legalidad</button>
+		<button ion-button round outline color="dark" icon-start id="boton3" (click)="alertFacturar(item[0].fechaIda, item[0].img, item[0].compania, item[0].origen, item[0].destino, item[0].fechaVuelta )">
+				<ion-icon name="card"></ion-icon>Facturar</button>
+		</div>	
+    </div>
+	<div class="tituloIncidencias">
+	<h1><ion-icon name="paper"></ion-icon>Incidencias</h1>
+	</div>
+	<div class="resultadoCaja">
+	<div class="titulo">
+	<img src="/assets/imgs/logoIberia.png" class="logoColocar">
+	<h2>Aerolínea Iberia</h2>
+	</div>
+	<div>
+		<div class="colocar1">
+		<p class="aerolineaTitulo">Origen: <p>Berlín, Alemania</p>
+		<p class="aerolineaTitulo">Fecha Ida: <p>06/03/2018</p>
+		</div>
+		<ion-icon name = "arrow-round-forward" class="flecha"></ion-icon>
+		<div class="colocar2">
+		<p class="aerolineaTitulo">Destino: <p>Madrid, España</p>
+		<p class="aerolineaTitulo">Fecha Vuelta: <p>20/03/2018</p>
+		</div>
+	</div>
+	<button ion-button round outline color="dark" icon-start id="boton4" (click)="irALegalidad()">
+			<ion-icon name="briefcase"></ion-icon>Legalidad</button>
+	</div>
+</ion-content>

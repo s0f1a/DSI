@@ -1,0 +1,56 @@
+page-resultados {
+
+.resultadoCaja{
+	border: 2px solid #000080;
+	background-color: white;
+	margin-top: 5%;
+	padding: 10px;
+}
+.aerolineaTitulo{
+font-weight: bold;
+text-decoration: underline;
+}
+.titulo{
+font-weight: bold;
+text-decoration: underline;
+text-align: center;
+margin-right: 15%;
+}
+#colorFondo{
+background-color: orange;
+}
+
+
+#colorTitulo{
+color:#000080;
+}
+.imagenRuta{
+width: 80%;
+margin-left: 10%;
+}
+.colocar1{
+float: left;
+width: 40%;
+text-align: center;
+}
+.colocar2{
+float: right;
+width: 40%;
+text-align: center;
+}
+.flecha{
+float: left;
+text-align: center;
+width: 20%;
+margin-top: 15%;
+color: #000080;
+}
+.centrar{
+margin-left: 25%;
+}
+.logoColocar{
+float: left;
+margin-left: 15%;
+}
+}
+

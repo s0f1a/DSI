@@ -1,0 +1,46 @@
+page-mis-tarjetas {
+#colorFondo{
+background-color: #000080;
+}
+.embellecedor{
+padding: 10px;
+text-align: center;
+}
+.fondo{
+background-color: white;
+padding: 10px;
+margin: 5%;
+}
+#decorar{
+text-decoration: underline;
+}
+.caja1{
+border: 1px solid #000080;
+
+}
+.iconoStyle{
+color: white;
+background-color: #000080;
+min-width: 50px;
+padding: 15px;
+margin-right: 5%;
+}
+
+.divCaja{
+display: flex;
+margin-bottom: 10%;
+}
+#centrar{
+text-align: center;
+}
+#estiloInfo{
+text-align: center;
+padding: 10px;
+margin-bottom: 10%;
+}
+#fondo2{
+background-color: white;
+padding: 10px;
+margin: 5%;
+}
+}

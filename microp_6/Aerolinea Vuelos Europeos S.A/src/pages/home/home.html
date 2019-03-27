@@ -1,0 +1,64 @@
+<ion-header>
+	<ion-navbar>
+		<button ion-button menuToggle>
+			<ion-icon name = "menu"></ion-icon >	
+		</button >
+
+<ion-title> Aerolínea Vuelos Europeos S.A. </ion-title>
+</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<div>
+	<ion-slides pager="true" autoplay="5000" loop="true">
+	<ion-slide>
+		<img src="/assets/imgs/img1.jpg">
+	</ion-slide>	
+	<ion-slide>	
+		<img src="/assets/imgs/img2.jpg">
+	</ion-slide>
+	<ion-slide>
+		<img src="/assets/imgs/img3.jpeg">
+	</ion-slide>
+	<ion-slide>
+		<img src="/assets/imgs/img4.jpg">
+	</ion-slide>
+	<ion-slide>
+		<img src="/assets/imgs/img5.jpg">
+	</ion-slide>
+	<ion-slide>
+		<img src="/assets/imgs/img6.jpg">
+	</ion-slide>
+	</ion-slides>
+	
+	</div>
+<div>	
+  
+  <div class="colorFondo">
+  		<div class="embellecedor">
+		<h2 id="centrar"><ion-icon name = "plane" id="espacioIcono"></ion-icon>Encuentra tu vuelo ideal...</h2>
+		</div>
+		<div class="caja1">
+		<label id="Origen"><ion-icon name = "locate" class="iconoStyle"></ion-icon></label>
+		<ion-input class="BuscadorCajas" placeholder="Origen" type="text" name="Origen" [(ngModel)]="Origen" > </ion-input>
+		</div>
+		<div class="caja2">
+		<ion-icon name = "pin" class="iconoStyle"></ion-icon>
+		<ion-input class="BuscadorCajas" placeholder="Destino" type="text"  name="Destino" [(ngModel)]="Destino"> </ion-input>	
+		</div>
+		<div class="caja1">
+		<ion-icon name = "calendar" class="iconoStyle"></ion-icon>
+		<ion-input class="BuscadorCajas" placeholder="Fecha Ida: mm/dd/aaa" type="text" name="FechaIda" [(ngModel)]="FechaIda"> </ion-input>
+		</div>
+		<div class="caja2">
+		<ion-icon name = "calendar" class="iconoStyle" position="floating"></ion-icon>
+		<ion-input class="BuscadorCajas" placeholder="Fecha Vuelta: mm/dd/aaa" type="text" name="FechaVuelta" [(ngModel)]="FechaVuelta"> </ion-input>
+		</div>
+		<div id="botonBuscar">
+			<button ion-button round outline color="light" icon-start (click)="irAResultadosPage()">
+			<ion-icon name="search"></ion-icon>Buscar</button>
+		</div>
+	</div>
+</div>
+
+</ion-content>

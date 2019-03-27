@@ -1,0 +1,37 @@
+<!--
+  Generated template for the FacturarPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+   <button ion-button menuToggle>
+	<ion-icon name = "menu"></ion-icon >	
+	</button >
+    <ion-title>Facturación de Reserva</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding id="colorFondo">
+<div class="fondo">
+		<div class="embellecedor">
+		<h2><ion-icon name = "alert" id="espacioIcono" color="danger"></ion-icon>Imprescindible</h2><h3 id="decorar">Rellene los datos:</h3>
+		</div>
+	<div class="divCaja">
+		<label><ion-icon name = "person" class="iconoStyle"></ion-icon ></label>
+		<ion-input class="caja1" placeholder="Nombre" [(ngModel)]="Nombre"></ion-input>
+		<ion-input placeholder="Apellidos" class="caja1" [(ngModel)]="Apellidos"></ion-input>
+	</div>
+	<div class="divCaja">
+		<label><ion-icon name = "filing" class="iconoStyle"></ion-icon ></label>
+		 <ion-input placeholder="Número del Pasaporte" class="caja1" [(ngModel)]="Pasaporte"></ion-input>
+	</div>
+	<div class="divCaja">
+		<label><ion-icon name = "medkit" color="danger" class="iconoStyle"></ion-icon ></label>
+		 <ion-input placeholder="Contacto de Emergencia" class="caja1" [(ngModel)]="Emergencias"></ion-input>
+	</div>
+	 <button ion-button round block (click)="guardar()"id="colorBoton">Guardar</button>
+</div>
+
+</ion-content>

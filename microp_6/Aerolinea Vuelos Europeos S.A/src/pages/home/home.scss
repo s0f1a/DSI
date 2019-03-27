@@ -1,0 +1,47 @@
+page-home {
+
+.colorFondo{
+background-color: #000080;
+padding: 10px;
+}
+.BuscadorCajas{
+border: 1px solid yellow;
+background-color: white;
+width: 30%;
+margin-right:10%;
+}
+
+.iconoStyle{
+color: white;
+border-color: black;
+min-width: 50px;
+padding: 10px;
+text-align: center;
+}
+.caja1{
+margin-bottom: 20px;
+display:flex;
+width: 50%;
+float:left;
+}
+.caja2{
+margin-bottom: 20px;
+display:flex;
+width: 50%;
+}
+.embellecedor{
+padding: 10px;
+}
+#botonBuscar{
+text-align: center;
+}
+#centrar{
+color: white;
+}
+.colorPag{
+background-color: orange;
+}
+#espacioIcono{
+margin-right: 5%;
+}
+}

@@ -1,0 +1,3 @@
+AUTORES:
+SOFÍA NAJARRO ALMARAZ- 100363545- https://github.com/s0f1a/DSI.git
+JORGE GARCÍA PUIG-100363649- https://github.com/Jorgeegp/Ejercicios-Sistemas-Interactivos.git
