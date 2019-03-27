@@ -22,11 +22,15 @@ export class NuevoContactoPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad NuevoContactoPage');
   }
-  
-  onAddContact (value:
-{nombre: string , organizacion: string , movil: string , correo: string }){
-	this.contactService.addContact(value);
-	this.navCtrl.pop();
-}
 
+  onAddContact(value: {nombre:string,organizacion:string,movil:string,correo:string}){
+
+    //this.contactService.addContact(value);
+
+    this.contactService.addContact(value).then(ref => {
+      console.log(ref.key);
+    });
+    this.navCtrl.pop();
+  }
+  
 }
