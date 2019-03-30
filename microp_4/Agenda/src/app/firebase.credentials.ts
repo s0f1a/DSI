@@ -1,5 +1,5 @@
 
-  // Initialize Firebase
+  // Inicializar Firebase
 export const FIREBASE_CONFIG = {
 
     apiKey: "AIzaSyBT0cL-Zgsvm5uk9rW2ZJiMdXoF8QV4KKQ",
